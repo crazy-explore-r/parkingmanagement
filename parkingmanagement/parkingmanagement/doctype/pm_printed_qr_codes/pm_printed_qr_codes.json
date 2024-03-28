@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:qr_name",
+ "creation": "2024-03-06 12:52:59.409480",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "qr_name",
+  "qr_upload",
+  "linked",
+  "qr_code_image",
+  "sl_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "qr_name",
+   "fieldtype": "Data",
+   "label": "QR Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "qr_upload",
+   "fieldtype": "Attach Image",
+   "label": "QR Upload"
+  },
+  {
+   "fieldname": "qr_code_image",
+   "fieldtype": "Image",
+   "hidden": 1,
+   "label": "QR Code Image",
+   "options": "qr_upload"
+  },
+  {
+   "fieldname": "sl_no",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "SL No"
+  },
+  {
+   "default": "0",
+   "fieldname": "linked",
+   "fieldtype": "Check",
+   "label": "Linked"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-13 12:07:48.317636",
+ "modified_by": "Administrator",
+ "module": "parkingManagement",
+ "name": "PM Printed QR Codes",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

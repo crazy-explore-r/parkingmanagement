@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-07 10:02:15.540520",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "number_of_qr_codes",
+  "parking_type",
+  "last_printed_qr_codes_section",
+  "bike_parking_with_shade",
+  "bike_parking__without_shade",
+  "column_break_sjn6l",
+  "car_parking__with_shade",
+  "car_parking__without_shade"
+ ],
+ "fields": [
+  {
+   "fieldname": "number_of_qr_codes",
+   "fieldtype": "Int",
+   "label": "Number of QR Codes"
+  },
+  {
+   "fieldname": "parking_type",
+   "fieldtype": "Select",
+   "label": "Parking type",
+   "options": "Bike parking with shade\nBike parking without shade\nCar parking with shade\nCar parking without shade"
+  },
+  {
+   "fieldname": "last_printed_qr_codes_section",
+   "fieldtype": "Section Break",
+   "label": "Last printed QR codes"
+  },
+  {
+   "default": "0",
+   "fieldname": "bike_parking_with_shade",
+   "fieldtype": "Int",
+   "label": "Bike parking with shade"
+  },
+  {
+   "default": "0",
+   "fieldname": "bike_parking__without_shade",
+   "fieldtype": "Int",
+   "label": "Bike parking  without Shade"
+  },
+  {
+   "fieldname": "column_break_sjn6l",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "car_parking__with_shade",
+   "fieldtype": "Int",
+   "label": "Car parking  with Shade"
+  },
+  {
+   "default": "0",
+   "fieldname": "car_parking__without_shade",
+   "fieldtype": "Int",
+   "label": "Car parking  without Shade"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-03-07 15:46:02.407026",
+ "modified_by": "Administrator",
+ "module": "parkingManagement",
+ "name": "PM Print QR Codes",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

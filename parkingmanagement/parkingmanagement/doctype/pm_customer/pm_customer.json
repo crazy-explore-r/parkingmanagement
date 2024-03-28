@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{employee_name}-{vehicle_number}",
+ "creation": "2024-03-06 12:48:22.096608",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_details_section",
+  "employee_name",
+  "phone_number",
+  "organization",
+  "location",
+  "column_break_5ince",
+  "status",
+  "vehicle",
+  "vehicle_number",
+  "vehicle_parking_type",
+  "qr_details_section",
+  "qr_attach",
+  "qr_number",
+  "qr_link",
+  "qr_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "label": "Organization",
+   "options": "PM Organization"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Select",
+   "label": "Location",
+   "options": "NTP\nNOM"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Select",
+   "label": "Vehicle",
+   "options": "Bike\nCar"
+  },
+  {
+   "fieldname": "vehicle_number",
+   "fieldtype": "Data",
+   "label": "Vehicle Number"
+  },
+  {
+   "fieldname": "vehicle_parking_type",
+   "fieldtype": "Select",
+   "label": "Vehicle Parking Type",
+   "options": "Bike parking with shade\nBike parking without shade\nCar parking with shade\nCar parking without shade"
+  },
+  {
+   "fieldname": "qr_details_section",
+   "fieldtype": "Section Break",
+   "label": "QR Details"
+  },
+  {
+   "fetch_from": "qr_link.qr_upload",
+   "fieldname": "qr_attach",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "QR attach"
+  },
+  {
+   "fieldname": "qr_code",
+   "fieldtype": "Image",
+   "label": "QR code",
+   "options": "qr_attach"
+  },
+  {
+   "fieldname": "column_break_5ince",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "qr_link.sl_no",
+   "fieldname": "qr_number",
+   "fieldtype": "Int",
+   "label": "QR Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qr_link",
+   "fieldtype": "Link",
+   "label": "QR link",
+   "no_copy": 1,
+   "options": "PM Printed QR Codes",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-12 17:23:32.494393",
+ "modified_by": "Administrator",
+ "module": "parkingManagement",
+ "name": "PM Customer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

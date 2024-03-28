@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-06 12:50:55.376990",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "number_of_qr_codes",
+  "parking_type",
+  "generated_qr_codes_section",
+  "bike_parking__with_shade",
+  "bike_parking__without_shade",
+  "column_break_hhjom",
+  "car_parking__with_shade",
+  "car_parking__without_shade"
+ ],
+ "fields": [
+  {
+   "fieldname": "number_of_qr_codes",
+   "fieldtype": "Int",
+   "label": "Number of QR codes"
+  },
+  {
+   "fieldname": "parking_type",
+   "fieldtype": "Select",
+   "label": "Parking Type",
+   "options": "Bike parking with shade\nBike parking without shade\nCar parking with shade\nCar parking without shade"
+  },
+  {
+   "default": "0",
+   "fieldname": "bike_parking__with_shade",
+   "fieldtype": "Int",
+   "label": "Bike parking  with shade"
+  },
+  {
+   "default": "0",
+   "fieldname": "bike_parking__without_shade",
+   "fieldtype": "Int",
+   "label": "Bike parking  without Shade"
+  },
+  {
+   "default": "0",
+   "fieldname": "car_parking__with_shade",
+   "fieldtype": "Int",
+   "label": "Car parking  with Shade"
+  },
+  {
+   "default": "0",
+   "fieldname": "car_parking__without_shade",
+   "fieldtype": "Int",
+   "label": "Car parking  without Shade"
+  },
+  {
+   "fieldname": "generated_qr_codes_section",
+   "fieldtype": "Section Break",
+   "label": "Generated QR codes"
+  },
+  {
+   "fieldname": "column_break_hhjom",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-03-07 15:40:19.609377",
+ "modified_by": "Administrator",
+ "module": "parkingManagement",
+ "name": "PM QR Generator",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
